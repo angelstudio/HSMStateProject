@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b9eea72ddfbe5441b680001191d11f1, type: 3}
+  m_Name: CharacterStandingState
+  m_EditorClassIdentifier: 
+  script: {fileID: 11500000, guid: 6e8d6d45ad6677c47bc5f2cc20dd2197, type: 3}
+  stateClassFullName: CharacterStandingState
+  debugName: Standing
+  stateId: 6
+  startStateIndex: 0
+  childs:
+  - {fileID: 11400000, guid: 41c398d763eb30d44bc252216db2a09c, type: 2}
+  - {fileID: 11400000, guid: cfe2fabaabf79ee4db011017dd07f8fd, type: 2}
+  - {fileID: 11400000, guid: 2d408f81a1b19514b8bf5b22ddd36091, type: 2}
+  - {fileID: 11400000, guid: 186f1bfeb98586d4ebcb62ad8276c740, type: 2}
+  parallelChilds: []
+  transitions:
+  - stateFrom: 8
+    trigger: 6
+    stateTo: 9
+  - stateFrom: 9
+    trigger: 7
+    stateTo: 8
+  - stateFrom: 8
+    trigger: 8
+    stateTo: 10
+  - stateFrom: 9
+    trigger: 8
+    stateTo: 10
+  - stateFrom: 10
+    trigger: 9
+    stateTo: 8
+  - stateFrom: 10
+    trigger: 9
+    stateTo: 9
+  - stateFrom: 14
+    trigger: 7
+    stateTo: 8
+  - stateFrom: 14
+    trigger: 6
+    stateTo: 9

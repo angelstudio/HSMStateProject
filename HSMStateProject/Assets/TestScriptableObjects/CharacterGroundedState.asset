@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b9eea72ddfbe5441b680001191d11f1, type: 3}
+  m_Name: CharacterGroundedState
+  m_EditorClassIdentifier: 
+  script: {fileID: 11500000, guid: ae5d2a55fd277e84dafd9c51aebd0779, type: 3}
+  stateClassFullName: CharacterGroundedState
+  debugName: Grounded
+  stateId: 3
+  startStateIndex: 0
+  childs:
+  - {fileID: 11400000, guid: bb5900fd57c29994ab4a5160fd3cb335, type: 2}
+  - {fileID: 11400000, guid: 1742a757100e9064b866f92fc570ad1e, type: 2}
+  - {fileID: 11400000, guid: b911f3e9752b9b247981d8048bf94097, type: 2}
+  parallelChilds: []
+  transitions:
+  - stateFrom: 6
+    trigger: 5
+    stateTo: 7
+  - stateFrom: 7
+    trigger: 4
+    stateTo: 6
+  - stateFrom: 6
+    trigger: 10
+    stateTo: 11
+  - stateFrom: 7
+    trigger: 10
+    stateTo: 11
+  - stateFrom: 11
+    trigger: 11
+    stateTo: 6
